@@ -55,7 +55,7 @@ const API_SITES = {
         api: 'https://www.mdzyapi.com/api.php/provide/vod',
         name: '魔都资源',
     },
-    wujin: {
+    wujinme: {
         api: 'https://api.wujinapi.me/api.php/provide/vod',
         name: '无尽资源',
     },
@@ -103,7 +103,40 @@ const API_SITES = {
         name: '黄色仓库',
         adult: true,
         detail: 'https://hsckzy.vip' // 添加detail URL以便特殊处理
-    }
+    },
+    // 新增资源站 (2026-07-18)
+    suoni: {
+        api: 'https://suoniapi.com/api.php/provide/vod',
+        name: '索尼资源',
+    },
+    jinying: {
+        api: 'http://jyzyapi.com/provide/vod/from/jinyingm3u8/',
+        name: '金鹰资源',
+    },
+    subo: {
+        api: 'https://subocaiji.com/api.php/provide/vod/',
+        name: '速博资源',
+    },
+    wujin: {
+        api: 'https://api.wujinapi.com/api.php/provide/vod/',
+        name: '无尽资源',
+    },
+    zuida: {
+        api: 'http://zuidazy.me/api.php/provide/vod/',
+        name: '最大资源',
+    },
+    haohui: {
+        api: 'https://hhzyapi.com/api.php/provide/vod/',
+        name: '豪华资源',
+    },
+    lebo: {
+        api: 'https://lbapi9.com/api.php/provide/vod/',
+        name: '乐播资源',
+    },
+    dbzy: {
+        api: 'https://dbzy.tv/api.php/provide/vod/',
+        name: '豆瓣资源',
+    },
 };
 
 // 添加聚合搜索的配置选项
