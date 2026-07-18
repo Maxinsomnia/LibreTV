@@ -1,12 +1,17 @@
-FROM nginx:alpine
+FROM node:20-alpine
 LABEL maintainer="LibreTV Team"
 LABEL description="LibreTV - 免费在线视频搜索与观看平台"
 
-# 复制应用文件
-COPY . /usr/share/nginx/html
+WORKDIR /app
 
-# 暴露端口
-EXPOSE 80
+# Copy application files
+COPY . .
 
-# 健康检查
-HEALTHCHECK --interval=30s --timeout=3s CMD wget --quiet --tries=1 --spider http://localhost/ || exit 1
+# Expose port
+EXPOSE 3000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s CMD wget --quiet --tries=1 --spider http://localhost:3000/ || exit 1
+
+# Start the server
+CMD ["node", "server.js"]

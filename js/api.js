@@ -1,7 +1,7 @@
 // 改进的API请求处理函数
 async function handleApiRequest(url) {
     const customApi = url.searchParams.get('customApi') || '';
-    const source = url.searchParams.get('source') || 'heimuer';
+    const source = url.searchParams.get('source') || 'bfzy';
     
     try {
         if (url.pathname === '/api/search') {

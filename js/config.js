@@ -1,6 +1,6 @@
 // 全局常量配置
 
-const PROXY_URL = 'https://cors.zme.ink/';
+const PROXY_URL = '/proxy/';
 const HOPLAYER_URL = 'https://hoplayer.com/index.html';
 const SEARCH_HISTORY_KEY = 'videoSearchHistory';
 const MAX_HISTORY_ITEMS = 5;
@@ -16,61 +16,56 @@ const SITE_CONFIG = {
 
 // API站点配置
 const API_SITES = {
-    heimuer: {
-        api: 'https://json.heimuer.xyz',
-        name: '黑木耳',
-        detail: 'https://heimuer.tv'
-    },
-    ffzy: {
-        api: 'http://ffzy5.tv',
-        name: '非凡影视',
-        detail: 'http://ffzy5.tv'
-    },
-    tyyszy: {
-        api: 'https://tyyszy.com',
-        name: '天涯资源',
-    },
-    ckzy: {
-        api: 'https://www.ckzy1.com',
-        name: 'CK资源',
-        adult: true
-    },
-    zy360: {
-        api: 'https://360zy.com',
-        name: '360资源',
-    },
-    wolong: {
-        api: 'https://wolongzyw.com',
-        name: '卧龙资源',
-    },
-    cjhw: {
-        api: 'https://cjhwba.com',
-        name: '新华为',
-    },
-    jisu: {
-        api: 'https://jszyapi.com',
-        name: '极速资源',
-        detail: 'https://jszyapi.com'
-    },
-    dbzy: {
-        api: 'https://dbzy.com',
-        name: '豆瓣资源',
-    },
     bfzy: {
-        api: 'https://bfzyapi.com',
+        api: 'https://bfzyapi.com/api.php/provide/vod',
         name: '暴风资源',
     },
-    mozhua: {
-        api: 'https://mozhuazy.com',
-        name: '魔爪资源',
+    ruyi: {
+        api: 'https://cj.rycjapi.com/api.php/provide/vod',
+        name: '如意资源',
+    },
+    ffzy: {
+        api: 'http://ffzy5.tv/api.php/provide/vod',
+        name: '非凡影视',
+        detail: 'http://ffzy5.tv',
+    },
+    dyttzy: {
+        api: 'http://caiji.dyttzyapi.com/api.php/provide/vod',
+        name: '电影天堂资源',
+        detail: 'http://caiji.dyttzyapi.com',
+    },
+    zy360: {
+        api: 'https://360zy.com/api.php/provide/vod',
+        name: '360资源',
+    },
+    lzi: {
+        api: 'https://cj.lziapi.com/api.php/provide/vod/',
+        name: '量子资源站',
+    },
+    jisu: {
+        api: 'https://jszyapi.com/api.php/provide/vod',
+        name: '极速资源',
+        detail: 'https://jszyapi.com',
+    },
+    zuid: {
+        api: 'https://api.zuidapi.com/api.php/provide/vod',
+        name: '最大资源',
     },
     mdzy: {
-        api: 'https://www.mdzyapi.com',
+        api: 'https://www.mdzyapi.com/api.php/provide/vod',
         name: '魔都资源',
     },
-    ruyi: {
-        api: 'https://cj.rycjapi.com',
-        name: '如意资源',
+    wujin: {
+        api: 'https://api.wujinapi.me/api.php/provide/vod',
+        name: '无尽资源',
+    },
+    baidu: {
+        api: 'https://api.apibdzy.com/api.php/provide/vod',
+        name: '百度云资源',
+    },
+    iqiyi: {
+        api: 'https://www.iqiyizyapi.com/api.php/provide/vod',
+        name: 'iqiyi资源',
     },
     
     jkun: {
@@ -174,7 +169,7 @@ const SECURITY_CONFIG = {
     sanitizeUrls: true,         // 是否清理URL
     maxQueryLength: 100,        // 最大搜索长度
     allowedApiDomains: [        // 允许的API域名
-        'heimuer.xyz',
+        'bfzyapi.com',
         'ffzy5.tv'
     ]
 };
@@ -192,4 +187,4 @@ const CUSTOM_API_CONFIG = {
 };
 
 // 新增隐藏内置黄色采集站API的变量，默认为true
-const HIDE_BUILTIN_ADULT_APIS = true;
+const HIDE_BUILTIN_ADULT_APIS = false;
